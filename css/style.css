@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #159895;
+    --secondary-color: #57C5B6;
+    --grid-background-color: white;
+    --font-color: #bbb;
+    --header-font-color: #F7D060;
+    --button-color: #E7B10A;
+    --font-family: serif;
+}
+
+main {
+    margin: 0.5rem auto;
+    width: 400px;
+    font-family: var(--font-family);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 50px;
+}
+
+.first-grid {
+    grid-row: 1/4;
+    grid-column: 1/7;
+    border:#bbb;
+    box-shadow: 0 0 5px #bbb;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 15px;
+    background-color: var(--grid-background-color);
+}
+
+.first-grid p {
+    color: var(--font-color);
+    font-size:small;
+    padding: 5px;
+    text-align: left;
+}
+
+.first-grid h2 {
+    color: var(--primary-color);
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.first-grid h4 {
+    color: var(--header-font-color);
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.second-grid {
+    grid-row: 4/6;
+    grid-column: 1/4;
+    border:#bbb;
+    box-shadow: 0 0 5px #bbb;
+    border-bottom-left-radius: 5px;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.second-grid h4 {
+    margin-bottom: 20px;
+}
+
+#full-access {
+    font-size: x-small;
+    margin-top: 10px;
+}
+
+.second-grid em {
+    font-size: x-small;
+}
+
+.third-grid {
+    grid-row: 4/6;
+    grid-column: 4/7;
+    border:#bbb;
+    box-shadow: 2px 2px 2px #bbb;
+    border-bottom-right-radius: 5px;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.third-grid p {
+    font-size: small;
+}
+
+.third-grid h4 {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--button-color);
+    height: 30px;
+    width: 140px;
+    color: white;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 2px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen {
+    
+}
